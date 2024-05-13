@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="output.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ 
+ 
+
+
+</head>
+
+
+
+<body class=" bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 h-screen font-[Poppins] ">
+  
+  <span class=" absolute text-black text-4xl top-5 left-4 cursor-pointer" onclick="Openbar()">
+    <i class=" bi bi-filter-left px-2 bg-transparent hover:bg-pink-600 rounded-md"></i>
+  </span>
+  
+  <!-- navigation bar -->
+
+  <div class="   sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] duration-1000
+    overflow-y-auto text-center   h-screen">
+    
+
+    <div id="sidebar-section" class="h-screen fixed">
+        <div
+          id="sidebar"
+          class="fixed h-screen  bg-slate-800 w-20 rounded-lg hover:w-72 duration-200"
+        >
+          <nav role="navigation" class="pl-4 pt-8 mt-4">
+            
+    
+    <div class="text-gray-100 text-xl mt-4 relative overflow-hidden">
+      <div class="p-2.5 mt-1 flex items-center rounded-md ">
+        <img class="  h-10 w-10 rounded-full" src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/432579173_1454573935492517_6649555014646667915_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEGZPYuEpj_F99yDwe5uYdx23GNV0aU5c3bcY1XRpTlzSXYoGDmXIOGIMpkgOV6kPERydUU2Iya28hVOXYqFDND&_nc_ohc=ivtJ5GWwVeoQ7kNvgFFwYJ5&_nc_ht=scontent.fmnl13-2.fna&oh=03_Q7cD1QGPG0U5G7MkapfdNVZtgpkOJsjWOwJA1sD3UoVkbE4KdQ&oe=6653C931"></i>
+        <h1 class=" pl-2 text-[15px]  ml-3 text-1xl text-gray-200 font-bold text-nowrap">Yummys Chicken</h1> 
+        <i class="bi bi-x ml-2  cursor-pointer lg:hidden" onclick="Openbar()"></i>   
+        
+      </div>
+
+  
+      
+      <br>
+      <hr class="my-2 text-gray-600">
+<br>
+<div class=" p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer   hover:bg-pink-700">
+
+  <i class="bi bi-house-door-fill"></i>
+  <a href="index.html" class="text-[15px] ml-4 text-gray-200 pl-3 text-nowrap">Home</a>
+</div>
+<!-- <hr class="my-4 text-gray-600"> -->
+
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class="fa-solid fa-users-line"></i>
+  <a href="aboutus.html" class="text-[15px] ml-4 text-gray-200 pl-2 text-nowrap">About Us</a>
+</div>
+<!-- <hr class="my-4 text-gray-600"> -->
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class="fa-solid fa-eye"></i>
+  <a href="overview.html" class="text-[15px] ml-4 text-gray-200 pl-3 text-nowrap">Project Overwiew</a>
+</div>
+<!-- <hr class="my-4 text-gray-600"> -->
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class=" fa-solid fa-comments"></i>
+  <a href="feedback.html" class="text-[15px] ml-4 text-gray-200 pl-2 text-nowrap">Feedback</a>
+
+</div>
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class="pl-1 fa-solid fa-mobile-screen"></i>
+  <a href="contact.html" class="text-[15px] ml-4 text-gray-200 pl-4 text-nowrap">Contact Us</a>
+
+</div>
+
+
+        
+
+        </div>
+       
+
+
+
+        
+
+   
+    </div>
+  </div>
+
+  <script>
+    function dropDown() {
+      document.querySelector('#submenu').classList.toggle('hidden')
+      document.querySelector('#arrow').classList.toggle('rotate-0')
+    }
+    dropDown()
+
+    function Openbar() {
+      document.querySelector('.sidebar').classList.toggle('left-[-300px]')
+    }
+  </script>
+
+  </div>
+
+  <!-- CONTENT -->
+
+  <div class="mt-10 flex justify-center">
+    <p class="text-2xl font-semibold leading-normal">Feedback</p>
+  </div>
+  
+  <div class="flex justify-items-center lg:mt-28 lg:ml-32">
+    <div class="bg-transparent p-8 rounded-lg ml-32 lg:ml-0">
+      <div class="flex flex-col items-center space-y-4 lg:ml-40">
+          <textarea class="w-full lg:w-[500px] h-72 px-4 py-2 bg-transparent border-2 border-black rounded focus:outline-none focus:border-white placeholder-black" placeholder="Enter your feedback here..." required></textarea>
+          <button class="w-[100px] bg-orange-400 hover:bg-orange-600 text-black font-semibold py-2 px-4 rounded-lg focus:outline-none focus:bg-orange-500">Submit</button>
+      </div>
+  </div>
+  
+    <div>
+      <img class="w-[100%] hidden lg:block" src="../src/images/icons.png" alt="">
+    </div>
+  </div>
+
+
+  <br> <br> 
+  <!-- footer -->
+
+        <div class=" p-1 flex mt-5 justify-center ">
+            <a href="https://www.facebook.com/profile.php?id=61557884633810" target="_blank"><i class="fa-brands fa-facebook  pl-10 "></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61557884633810" target="_blank"><i class="fa-brands fa-facebook  pl-10 hover:text-white "></i></a>
+            <a href="https://www.instagram.com/yummysfried?igsh=MWQxaWlhZmE2MjJubQ==" target="_blank"><i class="fa-brands fa-instagram pl-10 hover:text-white "></i></a>
+            <a href="https://x.com/yummyschicken?t=nMT2riLhTtMFSk40Y-bSHQ&amp;s=07" target="_blank"><i class="fa-brands fa-twitter pl-10 hover:text-white "></i></a>
+            <a href="https://www.tiktok.com/@yummy_friedchicken?_t=8kzD0Wt7mZY&amp;_r=1" target="_blank"><i class="fa-brands fa-tiktok pl-10 hover:text-white "></i></a>
+            <a href="https://www.youtube.com/@yummyfriedchicken-uh9rb" target="_blank"><i class="fa-brands fa-youtube pl-10 hover:text-white "></i></a>
+  </div>
+
+  <p class="pl-7  text-sm flex justify-center">Copyright &copy;2024; Yummys Fried Chicken</p> 
+
+
+
+
+</body>
+
+</html>

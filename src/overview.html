@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overwiew</title>
+  <link rel="stylesheet" href="output.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ 
+
+
+
+</head>
+
+
+
+<body class=" bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 h-screen font-[Poppins]">
+  
+  <span class=" absolute text-black text-4xl top-5 left-4 cursor-pointer" onclick="Openbar()">
+    <i class=" bi bi-filter-left px-2 bg-transparent hover:bg-pink-600 rounded-md"></i>
+  </span>
+  
+  <!-- navigation bar -->
+
+  <div class="   sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] duration-1000
+    overflow-y-auto text-center   h-screen">
+    
+
+    <div id="sidebar-section" class="h-screen fixed">
+        <div
+          id="sidebar"
+          class="fixed h-screen  bg-slate-800 w-20 rounded-lg hover:w-72 duration-200"
+        >
+          <nav role="navigation" class="pl-4 pt-8 mt-4">
+            
+    
+    <div class="text-gray-100 text-xl mt-4 relative overflow-hidden">
+      <div class="p-2.5 mt-1 flex items-center rounded-md ">
+        <img class="  h-10 w-10 rounded-full" src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/432579173_1454573935492517_6649555014646667915_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEGZPYuEpj_F99yDwe5uYdx23GNV0aU5c3bcY1XRpTlzSXYoGDmXIOGIMpkgOV6kPERydUU2Iya28hVOXYqFDND&_nc_ohc=ivtJ5GWwVeoQ7kNvgFFwYJ5&_nc_ht=scontent.fmnl13-2.fna&oh=03_Q7cD1QGPG0U5G7MkapfdNVZtgpkOJsjWOwJA1sD3UoVkbE4KdQ&oe=6653C931"></i>
+        <h1 class=" pl-2 text-[15px]  ml-3 text-1xl text-gray-200 font-bold text-nowrap">Yummys Chicken</h1> 
+        <i class="bi bi-x ml-2  cursor-pointer lg:hidden" onclick="Openbar()"></i>   
+        
+      </div>
+
+  
+      
+      <br>
+      <hr class="my-2 text-gray-600">
+<br>
+    
+
+     
+<div class=" p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer   hover:bg-pink-700">
+
+  <i class="bi bi-house-door-fill"></i>
+  <a href="index.html" class="text-[15px] ml-4 text-gray-200 pl-3 text-nowrap">Home</a>
+</div>
+<!-- <hr class="my-4 text-gray-600"> -->
+
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class="fa-solid fa-users-line"></i>
+  <a href="aboutus.html" class="text-[15px] ml-4 text-gray-200 pl-2 text-nowrap">About Us</a>
+</div>
+<!-- <hr class="my-4 text-gray-600"> -->
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class="fa-solid fa-eye"></i>
+  <a href="overview.html" class="text-[15px] ml-4 text-gray-200 pl-3 text-nowrap">Project Overwiew</a>
+</div>
+<!-- <hr class="my-4 text-gray-600"> -->
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class=" fa-solid fa-comments"></i>
+  <a href="feedback.html" class="text-[15px] ml-4 text-gray-200 pl-2 text-nowrap">Feedback</a>
+
+</div>
+
+<div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-pink-700">
+  <i class="pl-1 fa-solid fa-mobile-screen"></i>
+  <a href="contact.html" class="text-[15px] ml-4 text-gray-200 pl-4 text-nowrap">Contact Us</a>
+
+</div>
+
+        
+
+        </div>
+       
+
+
+
+        
+
+   
+    </div>
+  </div>
+
+  <script>
+    function dropDown() {
+      document.querySelector('#submenu').classList.toggle('hidden')
+      document.querySelector('#arrow').classList.toggle('rotate-0')
+    }
+    dropDown()
+
+    function Openbar() {
+      document.querySelector('.sidebar').classList.toggle('left-[-300px]')
+    }
+  </script>
+
+</div>
+
+  <!-- CONTENT -->
+
+
+  <div class="mt-10 flex justify-center">
+    <p class="text-2xl font-semibold leading-normal mb-24 lg:mb-0" > Project Overwiew</p> 
+  </div>
+ 
+
+  <div class="grid place-items-center lg:grid-cols-2 lg:grid-rows-3 grid-rows-1 grid-cols-1 gap-4 mt-5 lg:ml-44 ml-10 w-5/6 h-[500px]">
+    <!-- Row 1, Cell 1 -->
+    <div class="flex  w-full  rounded-lg shadow-2xl  p-4 h-28 hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2 mb-24 lg:mb-0">
+      <div class=" text-6xl grid place-items-center">
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3 ">Our project aims to develop a comprehensive social media platform and website specifically for Yummy's Fried Chicken, a local business that operates in Medina.</p>
+      </div>
+    </div>
+    
+
+
+    
+    <!-- Row 2, Cell 1 -->
+    <div class="flex  w-full  rounded-lg shadow-2xl p-4 h-28  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl grid place-items-center">
+        <i class="fa-solid fa-paper-plane"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">We create social media accounts like namely Facebook, Instagram, Twitter, Tiktok and, Youtube and create business website to enhance the business's online presence</p>
+      </div>
+    </div>
+
+    
+    
+    <!-- Row 2, Cell 2 -->
+    <div class="flex  w-full  rounded-lg shadow-2xl p-4 h-28  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl grid place-items-center">
+        <i class="fa-solid fa-bookmark"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">We enable Yummy's Fried Chicken to showcase their products, services, and brand identity effectively.</p>
+      </div>
+    </div>
+    
+    <!-- Row 1, Cell 2 -->
+    <div class="flex  w-full rounded-lg shadow-2xl p-4 h-28  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl grid place-items-center">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">We build a user-friendly and visually appealing website that reflects the essence of the business.</p>
+      </div>
+    </div>
+    
+    <!-- Row 3, Cell 1 -->
+    <div class="flex  rounded-lg shadow-2xl p-4 h-28  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl grid place-items-center">
+        <i class="fa-solid fa-pen-nib"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">Enhance user engagement and interaction through innovative features that foster meaningful connections between business and their audience.</p>
+      </div>
+       </div>
+    
+    <!-- Row 3, Cell 2 -->
+    <div class="flex  rounded-lg shadow-2xl p-4 h-28  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl grid place-items-center">
+        <i class="fa-solid fa-paperclip"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">Elevate businesses' visibility and brand awareness by providing them with powerful online tools and resources.</p>
+      </div>
+    </div>
+</div>
+
+<!--ikaduha-->>
+<div class="mt-10 flex justify-center ">
+  <p class="text-2xl font-semibold leading-normal mt-28 lg:mt-0" > Development Process</p> 
+</div>
+
+<div class="grid grid-cols-1 place-items-center lg:grid-rows-3 gap-4 mt-20 w-5/6 h-[500px] lg:ml-44  ml-10">
+  <!-- Row 1, Cell 1 -->
+  <div class="flex  rounded-lg shadow-2xl p-4 w-full  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2 ">
+    <div class=" text-6xl grid place-items-center">
+      <i class="fa-solid fa-repeat"></i>
+    </div>
+    <div>
+      <p class="text-sm text-justify ml-2 p-3"><span class="font-bold">Planning and Research:</span>
+
+          We start by conducting thorough research to understand the needs and preferences of businesses and their target audience.
+          We define clear goals and objectives for the project, outlining what we aim to achieve and how we plan to do it.
+          We collaborate closely with stakeholders to gather insights, feedback, and requirements to inform our development process.</p>
+    </div>
+  </div>
+  
+  <!-- Row 2, Cell 1 -->
+  <div class="flex  rounded-lg shadow-2xl p-4  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2"   >
+    <div class=" text-6xl grid place-items-center">
+      <i class="fa-solid fa-paint-roller"></i>
+    </div>
+    <div>
+      <p class="text-sm text-justify ml-2 p-3"><span class="font-bold">Design and Prototyping:</span>
+
+        We create user personas and wireframes to visualize the user experience and interface design.
+        We focus on designing a user-friendly and intuitive platform layout that prioritizes usability and accessibility for the business and their audience.
+        We iterate on our designs through prototyping and user testing to refine the platform's functionality and ensure it meets the needs of our target users.</p>
+    </div>
+  </div>
+  
+  <!-- Row 3, Cell 1 -->
+  <div class="flex  rounded-lg shadow-2xl p-4  hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+    <div class=" text-6xl grid place-items-center">
+      <i class="fa-solid fa-gears"></i>
+    </div>
+    <div>
+      <p class="text-sm text-justify ml-2 p-3"><span class="font-bold">Development and Testing:</span>
+
+        We begin the development process, breaking down the project into smaller, manageable tasks.
+        Our development team works collaboratively to implement the platform features and functionalities according to the design specifications.
+        Throughout the development phase, we ensure that we meet the desired outcome of the projects.
+        
+        </p>
+    </div>
+  </div>
+</div>
+<!--ikatuloo-->
+
+<div class="mt-10 flex justify-center">
+  <p class="text-2xl font-semibold leading-normal ml-10 mt-60 lg:mt-0" > Future Enhancement/Recommendation</p> 
+</div>
+
+
+<div class=" border-gray-400 p-4  ">
+  <div class="grid lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 ml-10 gap-4 lg:mt-20 w-5/6 h-[300px] lg:ml-44" >
+    <!-- Row 1, Cell 1 -->
+    <div class="flex  rounded-lg shadow-2xl p-4 hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl ">
+        <i class="fa-solid fa-comments"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">The future enhancement plan involves implementing advanced social media features, graphics design enhancements, and website functionalities expansion. Graphics design enhancements will focus on collaborating with experienced designers to create visually appealing multimedia content and ensuring optimal display across devices through responsive design principles.</p>
+      </div>
+    </div>
+  
+    
+    <!-- Row 1, Cell 2 -->
+    <div class="flex  rounded-lg shadow-2xl p-4 hover:bg-orange-400 transition-transform duration-300 hover:transform hover:-translate-y-2">
+      <div class=" text-6xl ">
+        <i class="fa-solid fa-thumbs-up"></i>
+      </div>
+      <div>
+        <p class="text-sm text-justify ml-2 p-3">Enhancing social media features, graphics design, and website functionalities can significantly elevate the online presence and performance of businesses. By implementing advanced social media features, businesses can foster greater engagement and interaction with their audience. Graphics design enhancements can make content more visually appealing and impactful, while website functionalities expansion can streamline business operations and drive growth. Together, these enhancements contribute to a more compelling and effective digital presence for businesses, ultimately leading to increased brand awareness, customer engagement, and revenue generation.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+  
+
+
+  <!-- footer -->
+        <div class=" p-1 flex justify-center mt-96 lg:mt-0">
+          <a href="https://www.facebook.com/profile.php?id=61557884633810" target="_blank"><i class="fa-brands fa-facebook  pl-10 "></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61557884633810" target="_blank"><i class="fa-brands fa-facebook  pl-10 hover:text-white "></i></a>
+          <a href="https://www.instagram.com/yummysfried?igsh=MWQxaWlhZmE2MjJubQ==" target="_blank"><i class="fa-brands fa-instagram pl-10 hover:text-white "></i></a>
+          <a href="https://x.com/yummyschicken?t=nMT2riLhTtMFSk40Y-bSHQ&amp;s=07" target="_blank"><i class="fa-brands fa-twitter pl-10 hover:text-white "></i></a>
+          <a href="https://www.tiktok.com/@yummy_friedchicken?_t=8kzD0Wt7mZY&amp;_r=1" target="_blank"><i class="fa-brands fa-tiktok pl-10 hover:text-white "></i></a>
+          <a href="https://www.youtube.com/@yummyfriedchicken-uh9rb" target="_blank"><i class="fa-brands fa-youtube pl-10 hover:text-white "></i></a>
+  </div>
+
+  <p class="pl-7  text-sm flex justify-center">Copyright &copy;2024; Yummys Fried Chicken</p> 
+
+
+
+
+</body>
+
+</html>
